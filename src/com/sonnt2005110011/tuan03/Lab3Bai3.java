@@ -30,6 +30,15 @@ public class Lab3Bai3 {
         min = Math.min(min, soNguyen[i]);
     }
     System.out.print("\nPhần tử có giá trị nhỏ nhất:"+min);
-    
+    //tính trung bình cộng các số chia hết cho 3
+    int tong = 0;
+    int dem = 0;
+    for(int i=0; i < soNguyen.length; i++){
+        if(soNguyen[i] % 3 == 0){
+            tong+=soNguyen[i];
+            dem++;
+        }
+    }
+    System.out.println("\ntrung bình cộng các số chia hết cho 3:"+(tong/dem));
 }
 }
