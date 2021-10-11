@@ -7,37 +7,27 @@ import java.util.Scanner;
 public class Lab5Bai2 {
     static Scanner scanner = new Scanner(System.in);
     static ArrayList <String> list = new ArrayList<String>();
-    static void Menu(){
-        System.out.println("------------------MENU------------------");
-        System.out.println(">>1. Nhập danh sách họ và tên.");
-        System.out.println(">>2. Xuất danh sách vừa nhập.");
-        System.out.println(">>3. Xuất danh sách ngẫu nhiên.");
-        System.out.println(">>4. Sắp xếp giảm dần và xuất danh sách.");
-        System.out.println(">>5. Tìm và xoá họ tên nhập từ bàn phím.");
-        System.out.println(">>6. Kết thúc.");
-        System.out.print("Chọn chức năng: ");
-        int key = scanner.nextInt();
-        scanner.nextLine();
-        switch(key){
-            case 1:
-                nhap();
-                break;
-            case 2:
-                xuat();
-                break;
-            case 3:
-                xuatNgauNhien();
-                break;
-            case 4:
-                sapXep();
-                break;
-            case 5:
-                xoa();
-                break;
-            case 6:
-                System.exit(0);
-                break;
-        }
+    public static void main(String[] args) {
+        int suLuaChon;
+        do{
+            System.out.println("------------------MENU------------------");
+            System.out.println("1. Nhập danh sách họ và tên.");
+            System.out.println("2. Xuất danh sách vừa nhập.");
+            System.out.println("3. Xuất danh sách ngẫu nhiên.");
+            System.out.println("4. Sắp xếp giảm dần và xuất danh sách.");
+            System.out.println("5. Tìm và xoá họ tên nhập từ bàn phím.");
+            System.out.println("6. Kết thúc.");
+            System.out.print("Chọn chức năng: ");
+            System.out.println("------------------MENU------------------");
+            suLuaChon = scanner.nextInt();
+            switch(suLuaChon){
+                case 1:nhap();break;
+                case 2:xuat();break;
+                case 3:NgauNhien();break;
+                case 4:sapXep();break;
+                case 5:xoa();break;
+                default: System.out.println("kết thúc chương trình");
+            }}while(suLuaChon >= 1 && suLuaChon <= 5);
     }
     static void nhap(){
         while(true){
@@ -54,7 +44,7 @@ public class Lab5Bai2 {
             System.out.println("Họ và tên: " +a);
         }    
     }
-    static void xuatNgauNhien(){
+    static void NgauNhien(){
         Collections.shuffle(list);
         xuat();
     }
@@ -74,11 +64,5 @@ public class Lab5Bai2 {
             }
         }
     }
-    public static void main(String[] args) {
-        do {
-            Menu();
-            System.out.print("Quan về MENU lựa chọn ?(y/n): ");
-        } while(scanner.nextLine().equals("y"));
-    }
-    
 }
+    
