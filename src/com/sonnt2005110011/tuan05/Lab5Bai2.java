@@ -30,6 +30,7 @@ public class Lab5Bai2 {
             }}while(suLuaChon >= 1 && suLuaChon <= 5);
     }
     static void nhap(){
+        scanner.nextLine();
         while(true){
             System.out.print("Nhập họ và tên: ");
             String x = scanner.nextLine();
@@ -55,6 +56,7 @@ public class Lab5Bai2 {
     }
     static void xoa(){
         System.out.print("Nhập tên cần xoá: ");
+        scanner.nextLine();
         String name = scanner.nextLine();
         for (String a : list) {
             if(a.equals(name)){
