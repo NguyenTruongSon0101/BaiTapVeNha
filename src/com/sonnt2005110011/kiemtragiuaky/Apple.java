@@ -1,6 +1,7 @@
 package com.sonnt2005110011.kiemtragiuaky;
 
 public class Apple {
+    public static Apple themTao;
     String ma;
     double khoiLuong;
     String mauSac;
@@ -19,4 +20,5 @@ public class Apple {
         System.out.println("khối lượng táo: "+khoiLuong);
         System.out.println("Màu sắc: "+mauSac);
     }
+    
 }
