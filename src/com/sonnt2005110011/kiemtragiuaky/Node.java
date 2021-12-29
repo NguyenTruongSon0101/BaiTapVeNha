@@ -6,13 +6,13 @@ public class Node {
 
     public Node(){}
 
-    public Node(Apple d){
-        data = d;
+    public Node(Apple apple){
+        data = apple;
         next = null;
     }
 
-    public Node (Apple d, Node n){
-        data = d;
-        next = n;
+    public Node (Apple apple, Node node){
+        data = apple;
+        next = node;
     }
 }
