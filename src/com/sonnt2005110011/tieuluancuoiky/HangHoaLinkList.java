@@ -268,6 +268,7 @@ public class HangHoaLinkList {
                     }
                     index = index.next;
                 }
+            index = newNode;
             Node smallerNode = new Node();
             smallerNode.data = newNode.data;
             newNode.data = current.data;

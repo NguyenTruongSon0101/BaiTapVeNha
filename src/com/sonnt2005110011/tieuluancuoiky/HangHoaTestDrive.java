@@ -15,18 +15,23 @@ public class HangHoaTestDrive {
         testDriveList.add("thuc pham", 1003, "ca        ", 80000, 50, "13/12/2021");
         testDriveList.add("thuc pham", 1004, "gao       ", 10000, 500, "20/12/2021");
         testDriveList.add("thuc pham", 1005, "rau       ", 30000, 100, "25/12/2021");
+        testDriveList.add("thuc pham", 1006, "hoa qua   ", 50000, 100, "27/12/2021");
+        testDriveList.add("thuc pham", 1007, "mi goi    ", 5000, 1000, "27/12/2021");
         //sanh su
         testDriveList.add("sanh su", 2001, "chen      ", 10000, 1000, "10/5/2021");
         testDriveList.add("sanh su", 2002, "ly        ", 5000, 2000, "17/5/2021");
         testDriveList.add("sanh su", 2003, "binh hoa  ", 50000, 200, "20/5/2021");
         testDriveList.add("sanh su", 2004, "binh tra  ", 10000, 500, "25/5/2021");
         testDriveList.add("sanh su", 2005, "lu        ", 20000, 100, "1/6/2021");
+        testDriveList.add("sanh su", 2006, "gach      ", 10000, 1000, "5/6/2021");
         //dien may
         testDriveList.add("dien may", 3001, "tivi      ", 3000000, 100, "10/2/2021");
         testDriveList.add("dien may", 3002, "tu lanh   ", 5000000, 300, "12/2/2021");
         testDriveList.add("dien may", 3003, "may giat  ", 2000000, 500, "14/2/2021");
         testDriveList.add("dien may", 3004, "dien thoai", 3500000, 200, "20/2/2021");
         testDriveList.add("dien may", 3005, "laptop    ", 8000000, 50, "22/2/2021");
+        testDriveList.add("dien may", 3006, "am sieu toc", 100000, 2000, "24/2/2021");
+        testDriveList.add("dien may", 3007, "quat       ", 1000000, 100, "26/2/2021");
 
         
         testDriveList.menu();
